@@ -16,10 +16,12 @@
             <div class="logo-login">
                 <img src="../img/olaf.jpg" class="logo-login-img">
             </div>
-            <my-directive label="{{user_label}}" input_val="{{user}}"></my-directive>
-            <my-directive label="{{pass_label}}" input_val="{{pass}}"></my-directive>
+            <my-directive label="{{user_label}}" ng-model="user"></my-directive>
+            <my-directive label="{{pass_label}}" ng-model="pass" valueType="true"></my-directive>
+            <%--<my-directive label="{{user_label}}" ng-model="user"></my-directive>
+            <my-directive label="{{pass_label}}" ng-model="pass"></my-directive>--%>
             <div class="wrap-login-button">
-                <input type="button" ng-click="" class="login-button" value="Login">
+                <input type="button" ng-click="handleLogin()" class="login-button" value="Login">
                 </input>
             </div>
         </div>

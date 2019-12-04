@@ -9,7 +9,7 @@
 <link rel="stylesheet"  href="../../css/common-style.css">
 <div class="row">
     <div class="prop-val">
-        <%--<input type="text" class="prop-input"  ng-model="label"/>--%>
-        <input type="text" class="prop-input" placeholder="label" ng-model="inputVal"/>
+        <input ng-show="!valuetype" type="text" class="prop-input" placeholder="{{label}}" ng-model="inputVal"/>
+        <input ng-show="valuetype" type="password" class="prop-input" placeholder="{{label}}" ng-model="inputVal"/>
     </div>
 </div>
