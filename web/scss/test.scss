@@ -1,0 +1,55 @@
+
+$orange-color: #FF5722;
+$white-color: #FFFFFF;
+$gray-color: #D9D9D9;
+
+@mixin color-font($color, $font){
+
+}
+
+.position-setting {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+.login-container {
+  background-image: url("../img/bg-biscuit.png");
+  width: 100%;
+  height: 100%;
+  @extend .position-setting;
+}
+
+.login-form {
+  width: 350px;
+  height: 500px;
+  border: 1px solid $gray-color;
+  border-radius: 3px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: $white-color;
+  @extend .position-setting;
+}
+.wrap-login-form,.logo-login {
+  width: 100%;
+}
+.logo-login {
+  @extend .position-setting;
+}
+.logo-login-img {
+  width: 35%;
+}
+.wrap-login-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login-button {
+  width: 30%;
+  background-color: $orange-color;
+  padding: 10px;
+  @extend .position-setting;
+  color: $white-color;
+  border: unset;
+  border-radius: 2px;
+}
