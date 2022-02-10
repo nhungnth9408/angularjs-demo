@@ -6,7 +6,7 @@
     "gulp-sass": "^4.0.2"
   },
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "node-sass": "node-sass --output-style compressed -o web/css web/scss"
